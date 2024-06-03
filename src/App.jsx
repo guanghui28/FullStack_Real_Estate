@@ -4,6 +4,7 @@ import "./App.css";
 import Companies from "./components/Companies/Companies";
 import Residencies from "./components/Residencies/Residencies";
 import Value from "./components/Value/Value";
+import Contact from "./components/Contact/Contact";
 
 export default function App() {
 	return (
@@ -16,6 +17,7 @@ export default function App() {
 			<Companies />
 			<Residencies />
 			<Value />
+			<Contact />
 		</div>
 	);
 }
