@@ -8,7 +8,7 @@ export default function Contact() {
 		<section className="c-wrapper">
 			<div className="paddings innerWidth c-container">
 				{/* left side */}
-				<div className="c-left flexColStart">
+				<div className="c-left">
 					<span className="orangeText">Our Contacts</span>
 					<span className="primaryText">Easy to Contact us</span>
 					<span className="secondaryText">

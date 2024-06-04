@@ -1,8 +1,14 @@
 import "./Value.css";
-import { Accordion } from "react-accessible-accordion";
+import {
+	Accordion,
+	AccordionItem,
+	AccordionItemHeading,
+	AccordionItemButton,
+	AccordionItemPanel,
+} from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
 import data from "../../utils/accordion";
-import AccordionMap from "./Accordion";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 export default function Value() {
 	return (
@@ -31,7 +37,21 @@ export default function Value() {
 						preExpanded={[0]}
 					>
 						{data.map((item, i) => (
-							<AccordionMap item={item} key={i} uuid={i} />
+							<AccordionItem key={i} uuid={i}>
+								<AccordionItemHeading>
+									<AccordionItemButton className=" accordionButton">
+										<div className="flexCenter icon">{item.icon}</div>
+										<span className="primaryText">{item.heading}</span>
+										<div className="flexCenter icon">
+											<MdOutlineArrowDropDown size={20} />
+										</div>
+									</AccordionItemButton>
+								</AccordionItemHeading>
+
+								<AccordionItemPanel>
+									<p className="secondaryText">{item.detail}</p>
+								</AccordionItemPanel>
+							</AccordionItem>
 						))}
 					</Accordion>
 				</div>

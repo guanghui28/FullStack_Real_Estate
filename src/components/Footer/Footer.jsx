@@ -3,9 +3,9 @@ import "./Footer.css";
 export default function Footer() {
 	return (
 		<footer className="f-wrapper">
-			<div className="paddings innerWidth flexCenter f-container">
+			<div className="paddings innerWidth f-container">
 				{/* left side */}
-				<div className="flexColStart f-left">
+				<div className="f-left">
 					<img src="./logo2.png" alt="" width={120} />
 
 					<span className="secondaryText">
@@ -15,7 +15,7 @@ export default function Footer() {
 				</div>
 
 				{/* right side */}
-				<div className="flexColStart f-right">
+				<div className="f-right">
 					<span className="primaryText">Information</span>
 					<span className="secondaryText">123 QuangNgai, VietNam</span>
 

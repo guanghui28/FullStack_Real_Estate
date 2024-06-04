@@ -6,6 +6,8 @@
 }
 
 .c-left {
+	display: flex;
+	flex-direction: column;
 	gap: 0.5rem;
 }
 
@@ -53,4 +55,42 @@
 	background: var(--blue-gradient);
 	color: white;
 	transform: scale(0.8);
+}
+
+@media (max-width: 1096px) {
+	.c-container {
+		flex-direction: column;
+	}
+
+	.c-left {
+		margin: auto;
+	}
+
+	.c-left > span {
+		text-align: center;
+	}
+
+	.contactModes {
+		width: 100%;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+
+	.c-right {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 640px) {
+	.row {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.row .mode {
+		width: 100%;
+	}
 }

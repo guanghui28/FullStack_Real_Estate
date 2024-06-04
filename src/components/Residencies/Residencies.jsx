@@ -8,7 +8,7 @@ export default function Residencies() {
 	return (
 		<section className="r-wrapper">
 			<div className="paddings innerWidth r-container">
-				<div className="r-header flexColStart">
+				<div className="r-head">
 					<span className="orangeText">Best Choices</span>
 					<span className="primaryText">Popular Residencies</span>
 				</div>
