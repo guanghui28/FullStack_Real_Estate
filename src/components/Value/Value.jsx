@@ -1,22 +1,13 @@
 import "./Value.css";
-import {
-	Accordion,
-	AccordionItem,
-	AccordionItemHeading,
-	AccordionItemButton,
-	AccordionItemPanel,
-	AccordionItemState,
-} from "react-accessible-accordion";
+import { Accordion } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
-import { MdOutlineArrowDropDown } from "react-icons/md";
 import data from "../../utils/accordion";
-import { useState } from "react";
 import AccordionMap from "./Accordion";
 
 export default function Value() {
 	return (
 		<section className="v-wrapper">
-			<div className="paddings innerWidth flexCenter v-container">
+			<div className="paddings innerWidth v-container">
 				{/* left side */}
 				<div className="v-left">
 					<div className="image-container">

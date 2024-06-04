@@ -1,12 +1,21 @@
 .v-wrapper {
 }
 
+.v-container {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
 .v-container .image-container {
 	border: 8px solid rgba(232, 232, 232, 0.93);
 }
 
 .v-container > div {
-	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .v-right {
